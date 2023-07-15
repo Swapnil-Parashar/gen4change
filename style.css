@@ -1,0 +1,303 @@
+/* Global styles */
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+/* Navbar styles */
+
+.navbar {
+	background-color: #343a40;
+	z-index: 2;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.nav-link {
+	color: #fff;
+	font-weight: bold;
+}
+
+#logo2 {
+	height: 50px;
+}
+
+/* About Us styles */
+
+.about-us {
+	background-color: #fff;
+	padding: 80px 0;
+	margin-top: 50px;
+}
+
+.about-us h3 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.about-us p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+.about-us img {
+	max-width: 100%;
+}
+
+
+/* Jumbotron styles */
+
+.jumbotron {
+	background-image: url('images/298781645_3239584566331285_7896410180190004750_n.jpg');
+	background-size: cover;
+	color: #fff;
+	padding: 4rem 2rem;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	height: 60vh;
+}
+
+.jumbotron h1 {
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+
+.jumbotron p {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+/* Projects section styles */
+
+.projects {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.projects h2 {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.card {
+	border: none;
+}
+
+.card-img-top {
+	height: 10rem;
+	object-fit: cover;
+}
+
+.card-title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.card-text {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* Join Us styles */
+
+.join-us {
+	background-color: #f8f9fa;
+	padding: 80px 0;
+	margin-top: 50px;
+}
+
+.join-us h3 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.join-us p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+.join-us img {
+	max-width: 100%;
+}
+
+/* Mentorship styles */
+
+/* Startup styles */
+
+#startup-section {
+	background-color: #f8f9fa;
+}
+
+/* education styles */
+
+/* Footer styles */
+
+footer {
+	background-color: #f8f9fa;
+	padding: 40px 0;
+	margin-top: 50px;
+	color: #212529;
+}
+
+footer h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+footer p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
+
+.social-icons li {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.social-icons li:last-child {
+	margin-right: 0;
+}
+
+
+/* Media query for small screens */
+
+@media (max-width: 576px) {
+	.jumbotron h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.jumbotron p {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.projects h2 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.card-img-top {
+		height: 8rem;
+	}
+
+	.card-title {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.card-text {
+		font-size: 0.875rem;
+		margin-bottom: 1rem;
+	}
+
+	.donations h2 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.donations p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+	}
+}
+
+/* Navbar animations */
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #343a40;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+	background-color: rgba(52, 58, 64, 0.9);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Project card animations */
+
+.card:hover {
+	transform: scale(1.05);
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Donate button animations */
+
+.btn-donate:hover {
+	transform: translateY(-5px);
+	transition: all 0.3s ease-in-out;
+}
+
+/* Donate modal animations */
+
+.modal-dialog {
+	animation: modal-show 0.3s ease-in-out;
+}
+
+@keyframes modal-show {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
